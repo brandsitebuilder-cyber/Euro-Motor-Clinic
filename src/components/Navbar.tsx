@@ -27,23 +27,33 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
-          <Link to="/" className="flex-shrink-0 flex flex-col justify-center items-center">
-            <span 
-              className="text-4xl md:text-5xl font-black tracking-wider text-brand-green leading-none"
-              style={{ 
-                fontFamily: 'var(--font-orbitron)',
-                textShadow: '2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-              }}
-            >
-              EURO
-            </span>
-            <div className="border border-brand-yellow w-full flex items-center justify-center mt-1 py-[3px] bg-slate-950/50">
+          <Link to="/" className="flex-shrink-0 flex items-center">
+            {/* Mobile Image Logo */}
+            <img 
+              src="https://drive.google.com/thumbnail?id=12r0hKSKqsKS3Y8HQ2HQubE02-_kc8STB&sz=w800" 
+              alt="Euro Motor Clinic Logo" 
+              className="h-10 w-auto object-contain md:hidden"
+              referrerPolicy="no-referrer"
+            />
+            {/* Desktop Text Logo */}
+            <div className="hidden md:flex flex-col justify-center items-center">
               <span 
-                className="text-[0.55rem] md:text-[0.65rem] font-bold tracking-[0.2em] text-brand-yellow leading-none"
-                style={{ fontFamily: 'var(--font-orbitron)' }}
+                className="text-5xl font-black tracking-wider text-brand-green leading-none"
+                style={{ 
+                  fontFamily: 'var(--font-orbitron)',
+                  textShadow: '2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                }}
               >
-                MOTOR CLINIC
+                EURO
               </span>
+              <div className="border border-brand-yellow w-full flex items-center justify-center mt-1 py-[3px] bg-slate-950/50">
+                <span 
+                  className="text-[0.65rem] font-bold tracking-[0.2em] text-brand-yellow leading-none"
+                  style={{ fontFamily: 'var(--font-orbitron)' }}
+                >
+                  MOTOR CLINIC
+                </span>
+              </div>
             </div>
           </Link>
           {/* Desktop Menu */}

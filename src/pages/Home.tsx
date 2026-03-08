@@ -39,12 +39,12 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col items-center -mt-16 md:-mt-24"
+            className="flex flex-col items-center -mt-8 md:-mt-24"
           >
             <img 
               src="https://drive.google.com/thumbnail?id=12r0hKSKqsKS3Y8HQ2HQubE02-_kc8STB&sz=w800" 
               alt="Euro Motor Clinic Logo" 
-              className="h-24 md:h-36 lg:h-48 w-auto mb-8 object-contain"
+              className="hidden md:block md:w-auto md:h-36 lg:h-48 mb-8 object-contain"
               referrerPolicy="no-referrer"
             />
             <span className="inline-block py-1 px-3 rounded-full bg-slate-800/80 border border-brand-green/30 text-sm font-bold text-brand-green mb-6 backdrop-blur-sm">
