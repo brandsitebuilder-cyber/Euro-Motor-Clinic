@@ -204,15 +204,33 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden relative group border border-slate-800">
-              <img src="https://drive.google.com/thumbnail?id=1AM2cvNsWbjMIZxzUSgbm_9t_lrFKQLrq&sz=w800" alt="Engine Build" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" />
+              <img src="https://drive.google.com/thumbnail?id=1TiaFotZkew3r5v4tMNQPISgO2rjYnPQw&sz=w800" alt="Engine Conversion" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <span className="text-brand-yellow font-bold text-lg">Lexus V8 Build</span>
+                <span className="text-brand-yellow font-bold text-lg">Performance Build</span>
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden relative group border border-slate-800">
-              <img src="https://drive.google.com/thumbnail?id=1djKidJT9TEXcUL_tIezWdWwNosN4SPG1&sz=w800" alt="Performance Car" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" />
+              <img src="https://drive.google.com/thumbnail?id=1RKqMvdfnGVD7Rih84Pd7SxsfZCG2EPmX&sz=w800" alt="Custom Fabrication" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <span className="text-brand-green font-bold text-lg">Dyno Tuning</span>
+                <span className="text-brand-yellow font-bold text-lg">Custom Fabrication</span>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden relative group border border-slate-800">
+              <img src="https://drive.google.com/thumbnail?id=1BvoMOfcFi4XcjwSEyva1kTDMixfLvAIF&sz=w800" alt="Engine Detail" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <span className="text-brand-green font-bold text-lg">Engine Precision</span>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden relative group border border-slate-800">
+              <img src="https://drive.google.com/thumbnail?id=1i9YrFptjWJh2aluHGoaaT2OOTKEbXjyk&sz=w800" alt="V8 Engine Bay" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <span className="text-brand-yellow font-bold text-lg">V8 Engine Bay</span>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden relative group border border-slate-800">
+              <img src="https://drive.google.com/thumbnail?id=1XdTfUy-fXMQnmX9O2BnR8vU4SM4oq7ks&sz=w800" alt="Performance Tuning" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" referrerPolicy="no-referrer" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <span className="text-brand-green font-bold text-lg">Performance Tuning</span>
               </div>
             </div>
           </div>
@@ -226,28 +244,16 @@ export default function Home() {
           <p className="text-slate-400 max-w-2xl mx-auto text-lg">The passionate minds behind Euro Motor Clinic and Outlaw Performance Conversions.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 gap-12 max-w-xl mx-auto">
           {/* Ferdi */}
           <div className="bg-slate-900/90 rounded-3xl p-8 border border-slate-800 flex flex-col items-center text-center group hover:border-brand-green/50 transition-colors">
             <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-slate-800 group-hover:border-brand-green transition-colors">
               <img src="https://drive.google.com/thumbnail?id=1b6nngJclIqGt4qGeXxU124rEcyMaJWJc&sz=w800" alt="Ferdi" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-1">Ferdi</h3>
-            <p className="text-brand-green font-bold mb-4">"Big Cheese" / Co-Founder</p>
+            <p className="text-brand-green font-bold mb-4">"Big Cheese" / Founder</p>
             <p className="text-slate-400 text-sm leading-relaxed">
               From a young age Ferdi has had a love affair with 2 strokes and continuously tinkered with them. Since 1996 the love affair grew bigger and faster. Today he is assisting clients to chase their dreams by sharing his passion for tweaking.
-            </p>
-          </div>
-
-          {/* Francois */}
-          <div className="bg-slate-900/90 rounded-3xl p-8 border border-slate-800 flex flex-col items-center text-center group hover:border-brand-yellow/50 transition-colors">
-            <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-slate-800 group-hover:border-brand-yellow transition-colors">
-              <img src="https://drive.google.com/thumbnail?id=1BhTejtgZV01f7hh6rWkL5daBuTvrZ649&sz=w800" alt="Francois" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
-            </div>
-            <h3 className="text-2xl font-bold text-white mb-1">Francois</h3>
-            <p className="text-brand-yellow font-bold mb-4">"Big Mac" / Co-Founder</p>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              His love for motor vehicles started from a young age when helping his dad fixing up cars at home. He started his career in the mechanical trade in 1997 and qualified as a motor mechanic from Merseta. To this day he can still burn the mid-night oil to ensure any custom job is completed on time.
             </p>
           </div>
         </div>
@@ -272,7 +278,7 @@ export default function Home() {
               <div className="flex gap-1 text-brand-yellow mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
-              <p className="text-slate-300 mb-6 italic">"Ferdi and Francois are absolute legends. They did a Lexus V8 conversion on my Hilux and the workmanship is incredible. Highly recommend Euro Motor Clinic for any performance upgrades!"</p>
+              <p className="text-slate-300 mb-6 italic">"Ferdi is an absolute legend. He did a Lexus V8 conversion on my Hilux and the workmanship is incredible. Highly recommend Euro Motor Clinic for any performance upgrades!"</p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-brand-green/20 flex items-center justify-center text-brand-green font-bold">MD</div>
                 <div>
@@ -302,7 +308,7 @@ export default function Home() {
               <div className="flex gap-1 text-brand-yellow mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
-              <p className="text-slate-300 mb-6 italic">"Took my Nissan RB build to them after another shop messed it up. Francois sorted out the ECU and tuning perfectly. The car runs like a dream now."</p>
+              <p className="text-slate-300 mb-6 italic">"Took my Nissan RB build to them after another shop messed it up. The team sorted out the ECU and tuning perfectly. The car runs like a dream now."</p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-brand-green/20 flex items-center justify-center text-brand-green font-bold">JM</div>
                 <div>
