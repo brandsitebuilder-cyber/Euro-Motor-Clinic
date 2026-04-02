@@ -52,18 +52,15 @@ export default function Home() {
             </span>
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-white">
               Precision Engineering.<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-brand-yellow">Unmatched Performance.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-brand-yellow">Unmatched Reliability.</span>
             </h1>
             <p className="mt-4 text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-10">
-              From major services to specialized Lexus V8 & Nissan RB conversions. We offer a 'Drop & Go' experience for total peace of mind.
+              Expert vehicle maintenance and specialized performance tuning. We offer a 'Drop & Go' experience for total peace of mind.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a href="#book" className="px-8 py-4 bg-brand-green hover:bg-brand-green-hover text-slate-950 text-lg font-bold rounded-xl transition-all hover:scale-105 flex items-center justify-center gap-2 shadow-lg shadow-brand-green/20">
                 Book a Service <ChevronRight className="w-5 h-5" />
               </a>
-              <Link to="/outlaw-conversions" className="px-8 py-4 bg-slate-900 hover:bg-slate-800 text-brand-yellow text-lg font-bold rounded-xl transition-all border border-brand-yellow/50 flex items-center justify-center gap-2">
-                Explore Conversions <Gauge className="w-5 h-5" />
-              </Link>
             </div>
           </motion.div>
         </div>
@@ -94,30 +91,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Split Architecture */}
+      {/* Services Section */}
       <section id="services" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Our Expertise</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto text-lg">Whether you need routine maintenance to keep your daily driver running smoothly, or a custom engine swap to chase your dreams, we have the skills.</p>
+          <p className="text-slate-400 max-w-2xl mx-auto text-lg">Comprehensive vehicle care to ensure safety, reliability, and longevity on the road.</p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="max-w-4xl mx-auto">
           {/* Standard Maintenance */}
           <div className="bg-slate-900/90 rounded-3xl p-8 md:p-12 border border-slate-700 relative overflow-hidden group hover:border-brand-green/50 transition-colors">
             <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
               <Wrench className="w-32 h-32 text-brand-green" />
             </div>
             <div className="relative z-10">
-              <h3 className="text-2xl font-bold mb-2 flex items-center gap-3 text-white">
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-white">
                 <span className="w-2 h-8 bg-brand-green rounded-full"></span>
-                Standard Maintenance
+                Vehicle Maintenance & Repairs
               </h3>
-              <p className="text-slate-400 mb-8">Comprehensive care for your vehicle to ensure safety, reliability, and longevity on the road.</p>
               
-              <div className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="text-lg font-bold text-white mb-3">Regular Services</h4>
-                  <ul className="space-y-2">
+                  <h4 className="text-lg font-bold text-white mb-4">Regular Services</h4>
+                  <ul className="space-y-3">
                     {['Replacement of stipulated fluids and parts', 'Verify all other fluid levels', 'Inspection for any fluid leaks', 'Testing of all exterior lights', 'Report on the state of tires and brakes'].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-slate-300">
                         <CheckCircle className="w-5 h-5 text-brand-green shrink-0 mt-0.5" />
@@ -127,9 +123,9 @@ export default function Home() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-white mb-3">Major Services</h4>
-                  <ul className="space-y-2">
-                    {['Inspection of steering system', 'Inspection of braking system', 'Inspection of electrical systems', 'Inspection of exhaust & cooling systems', 'Inspection of all drive train parts'].map((item, i) => (
+                  <h4 className="text-lg font-bold text-white mb-4">Major Services & Repairs</h4>
+                  <ul className="space-y-3">
+                    {['Inspection of steering system', 'Inspection of braking system', 'Inspection of electrical systems', 'Inspection of exhaust & cooling systems', 'Diagnostics & engine repairs'].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-slate-300">
                         <CheckCircle className="w-5 h-5 text-brand-green shrink-0 mt-0.5" />
                         <span>{item}</span>
@@ -138,46 +134,6 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Outlaw Performance */}
-          <div id="performance" className="bg-gradient-to-br from-slate-900 to-slate-950 rounded-3xl p-8 md:p-12 border border-brand-yellow/30 relative overflow-hidden group hover:border-brand-yellow/60 transition-colors">
-            <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
-              <Gauge className="w-32 h-32 text-brand-yellow" />
-            </div>
-            <div className="relative z-10">
-              <div className="inline-block px-3 py-1 bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow text-xs font-bold uppercase tracking-wider rounded-full mb-4">
-                Specialized Division
-              </div>
-              <h3 className="text-2xl font-bold mb-2 flex items-center gap-3 text-white">
-                <span className="w-2 h-8 bg-brand-yellow rounded-full"></span>
-                Outlaw Performance Conversions
-              </h3>
-              <p className="text-slate-400 mb-8">For the enthusiasts. We take on the unique challenges of performance tuning and custom engine enhancements.</p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                <div className="bg-slate-950/80 p-4 rounded-xl border border-slate-800">
-                  <h4 className="font-bold text-brand-yellow mb-1">Lexus V8 Swaps</h4>
-                  <p className="text-sm text-slate-400">Expert installation and tuning for reliable V8 power.</p>
-                </div>
-                <div className="bg-slate-950/80 p-4 rounded-xl border border-slate-800">
-                  <h4 className="font-bold text-brand-yellow mb-1">Nissan RB Builds</h4>
-                  <p className="text-sm text-slate-400">High-performance RB series engine rebuilds and tuning.</p>
-                </div>
-                <div className="bg-slate-950/80 p-4 rounded-xl border border-slate-800">
-                  <h4 className="font-bold text-brand-yellow mb-1">Custom Fabrication</h4>
-                  <p className="text-sm text-slate-400">Bespoke mounts, exhausts, and piping for unique setups.</p>
-                </div>
-                <div className="bg-slate-950/80 p-4 rounded-xl border border-slate-800">
-                  <h4 className="font-bold text-brand-yellow mb-1">Engine Rebuilds</h4>
-                  <p className="text-sm text-slate-400">Complete tear-downs and performance rebuilds.</p>
-                </div>
-              </div>
-              
-              <Link to="/outlaw-conversions" className="inline-flex items-center gap-2 text-brand-yellow hover:text-brand-yellow-hover font-bold transition-colors">
-                View Conversion Details <ChevronRight className="w-4 h-4" />
-              </Link>
             </div>
           </div>
         </div>
@@ -189,7 +145,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">The Workshop</h2>
-              <p className="text-slate-400 text-lg max-w-xl">A glimpse into our daily operations and recent performance conversion projects.</p>
+              <p className="text-slate-400 text-lg max-w-xl">A glimpse into our daily operations and recent performance projects.</p>
             </div>
             <a href="#" className="text-brand-green hover:text-brand-green-hover font-bold flex items-center gap-2">
               View full gallery <ChevronRight className="w-4 h-4" />
@@ -241,7 +197,7 @@ export default function Home() {
       <section id="team" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Meet the Experts</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto text-lg">The passionate minds behind Euro Motor Clinic and Outlaw Performance Conversions.</p>
+          <p className="text-slate-400 max-w-2xl mx-auto text-lg">The passionate minds behind Euro Motor Clinic.</p>
         </div>
 
         <div className="grid grid-cols-1 gap-12 max-w-xl mx-auto">
@@ -253,7 +209,7 @@ export default function Home() {
             <h3 className="text-2xl font-bold text-white mb-1">Ferdi</h3>
             <p className="text-brand-green font-bold mb-4">"Big Cheese" / Founder</p>
             <p className="text-slate-400 text-sm leading-relaxed">
-              From a young age Ferdi has had a love affair with 2 strokes and continuously tinkered with them. Since 1996 the love affair grew bigger and faster. Today he is assisting clients to chase their dreams by sharing his passion for tweaking.
+              From a young age Ferdi has had a love affair with engines and continuously tinkered with them. Since 1996, that passion has only grown. Today, he dedicates his expertise to keeping clients' vehicles running reliably and at peak performance through meticulous maintenance and repair.
             </p>
           </div>
         </div>
@@ -278,7 +234,7 @@ export default function Home() {
               <div className="flex gap-1 text-brand-yellow mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
-              <p className="text-slate-300 mb-6 italic">"Ferdi is an absolute legend. He did a Lexus V8 conversion on my Hilux and the workmanship is incredible. Highly recommend Euro Motor Clinic for any performance upgrades!"</p>
+              <p className="text-slate-300 mb-6 italic">"Ferdi is an absolute legend. He did some performance tuning on my Hilux and the workmanship is incredible. Highly recommend Euro Motor Clinic for any maintenance or upgrades!"</p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-brand-green/20 flex items-center justify-center text-brand-green font-bold">MD</div>
                 <div>
@@ -382,7 +338,7 @@ export default function Home() {
                   <select className="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition-colors appearance-none">
                     <option>Minor Service</option>
                     <option>Major Service</option>
-                    <option>Performance Conversion</option>
+                    <option>Performance Tuning</option>
                     <option>Diagnostics / Repair</option>
                   </select>
                 </div>

@@ -15,7 +15,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-slate-400 max-w-sm mb-6">
-              Professional vehicle maintenance and specialized performance conversions in Bellville.
+              Professional vehicle maintenance and specialized performance tuning in Bellville.
             </p>
             <div className="flex gap-4">
               {/* Social icons placeholders */}

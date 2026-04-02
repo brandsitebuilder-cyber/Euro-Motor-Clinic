@@ -21,7 +21,7 @@ export default function WhatsAppButton() {
   }, []);
 
   const phoneNumber = "27814117120";
-  const message = "Hi Euro Motor Clinic, I would like to inquire about a service/conversion.";
+  const message = "Hi Euro Motor Clinic, I would like to inquire about a service.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (

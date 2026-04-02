@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import OutlawConversions from "./pages/OutlawConversions";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function App() {
@@ -12,7 +11,6 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/outlaw-conversions" element={<OutlawConversions />} />
         </Routes>
         <Footer />
         <WhatsAppButton />

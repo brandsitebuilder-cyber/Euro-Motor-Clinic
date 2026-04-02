@@ -59,7 +59,6 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to={isHome ? "#services" : "/#services"} onClick={(e) => handleNavClick(e, 'services')} className="text-sm font-medium text-brand-green hover:text-brand-green-hover transition-colors">Services</Link>
-            <Link to="/outlaw-conversions" className="text-sm font-medium text-brand-green hover:text-brand-green-hover transition-colors">Outlaw Conversions</Link>
             <Link to={isHome ? "#gallery" : "/#gallery"} onClick={(e) => handleNavClick(e, 'gallery')} className="text-sm font-medium text-brand-green hover:text-brand-green-hover transition-colors">Gallery</Link>
             <Link to={isHome ? "#team" : "/#team"} onClick={(e) => handleNavClick(e, 'team')} className="text-sm font-medium text-brand-green hover:text-brand-green-hover transition-colors">Team</Link>
             <Link to={isHome ? "#book" : "/#book"} onClick={(e) => handleNavClick(e, 'book')} className="px-5 py-2.5 bg-brand-green hover:bg-brand-green-hover text-slate-950 text-sm font-bold rounded-lg transition-colors">
@@ -79,7 +78,6 @@ export default function Navbar() {
         <div className="md:hidden bg-slate-900 border-b border-slate-800">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link to={isHome ? "#services" : "/#services"} onClick={(e) => handleNavClick(e, 'services')} className="block px-3 py-2 text-base font-medium text-brand-green hover:text-brand-green-hover">Services</Link>
-            <Link to="/outlaw-conversions" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 text-base font-medium text-brand-green hover:text-brand-green-hover">Outlaw Conversions</Link>
             <Link to={isHome ? "#gallery" : "/#gallery"} onClick={(e) => handleNavClick(e, 'gallery')} className="block px-3 py-2 text-base font-medium text-brand-green hover:text-brand-green-hover">Gallery</Link>
             <Link to={isHome ? "#team" : "/#team"} onClick={(e) => handleNavClick(e, 'team')} className="block px-3 py-2 text-base font-medium text-brand-green hover:text-brand-green-hover">Team</Link>
             <Link to={isHome ? "#book" : "/#book"} onClick={(e) => handleNavClick(e, 'book')} className="block px-3 py-2 text-base font-bold text-brand-yellow">Book Service</Link>
